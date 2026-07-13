@@ -17,7 +17,12 @@ const teacherSchema = new mongoose.Schema({
 
     bio:String,
 
-    profileImage:String
+    profileImage:String,
+
+    institutionId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Institution",
+    required: true}
 
 },{timestamps:true});
 
