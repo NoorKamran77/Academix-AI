@@ -2,7 +2,7 @@ from datetime import datetime
 
 from pydantic import BaseModel, ConfigDict
 
-from models.quiz import Quiz, Question
+from models.quizModel import Quiz, Question
 
 
 class QuizCreate(Quiz):
